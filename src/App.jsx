@@ -9,7 +9,7 @@ const App = () => {
 
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select();
-    window.navigator.clipboard.writeText(password);
+    window.navigator.clipboard.writeText(password);       //This is how we do make copy button work//
   }, [password]);
 
   const passwordGenerator = useCallback(() => {
